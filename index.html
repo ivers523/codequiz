@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="assets/styles.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
@@ -24,7 +25,7 @@
                 </li>
             </ul>
             <span class="navbar-text" id="timer">
-                Time:o
+                Time:0
             </span>
         </div>
     </nav>
@@ -34,24 +35,28 @@
                 <h1>Coding Quiz Challenge</h1>
                 <p>Answer the following code-related questions before time runs out! Incorrect answers will reduce your
                     time by 10 seconds.</p>
-                <button type="button" class="btn btn-success" id="start-button" onclick="startQuiz()">Start Quiz</button>
+                <button type="button" class="btn btn-success" id="start-button" onclick="startQuiz()">Start
+                    Quiz</button>
             </div>
         </div>
     </div>
     <div class="container" id="question-container">
         <div class="row mt-5 justify-content-center">
-            <div class="col-8 text-center">
-                <h4>This is a placeholder question. Lorem ipsum, dolor sit amet consectetur adipisicing elit? Lorem
-                    ipsum, dolor sit amet consectetur adipisicing elit?</h4>
-                <button type="button" class="btn btn-outline-info m-2" id="button1">Button 1</button>
-                <button type="button" class="btn btn-outline-info m-2" id="button2">Button 2</button>
-                <button type="button" class="btn btn-outline-info m-2" id="button3">Button 3</button>
-                <button type="button" class="btn btn-outline-info m-2" id="button4">Button 4</button>
+            <div class="col-8 text-center justify-content-center">
+                <h4 id="title"></h4>
+                <button type="button" class="btn btn-outline-info m-2" id="button1"
+                    onClick=console.log("button1")>Button 1</button>
+                <button type="button" class="btn btn-outline-info m-2" id="button2"
+                    onClick=console.log("button2")>Button 2</button>
+                <button type="button" class="btn btn-outline-info m-2" id="button3"
+                    onClick=console.log("button3")>Button 3</button>
+                <button type="button" class="btn btn-outline-info m-2" id="button4"
+                    onClick=console.log("button4")>Button 4</button>
             </div>
         </div>
     </div>
-    <script src="script.js"></script>
     <script src="questions.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
